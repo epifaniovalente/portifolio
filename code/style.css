@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --fundo_div1: #e4e2e259;
+    --fundo_div2: #F5F5F5;
+    --textos_op1: #222;
+    --textos_op2: #6b6a6a;
+    --principal_op1: #3b82f6;
+    --principal_op2: #4A90E2;
+}
+
+/*Fontes*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    z-index: 1000;
+    background-color: var(--principal_op1);
+    padding: .8rem 2rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+}
+
+header #name{
+    color: var(--fundo_div2);
+    font-size: 1.3rem;
+}
+
+#nav_links ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    list-style-type: none;
+}
+
+#nav_links ul li a{
+    color: var(--fundo_div2);
+    
+    font-size: .9rem;
+}
+
+header #menu{
+    background: transparent;
+    border: none;
+    color: var(--fundo_div2);
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    display: none;
+}
+
+#home_section{
+    margin-top: 50px;
+    padding: 2rem;
+    background-color: var(--fundo_div1);
+
+    text-align: center;
+}
+
+#perfil{
+    margin: auto;
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#perfil img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#titulo{
+    font-size: 1.5rem;
+    color: var(--textos_op1);
+    margin-bottom: 1rem;
+}
+
+#descricao{
+    color: var(--textos_op2);
+    margin-bottom: 1rem;
+}
+
+#home_section a{
+    color: var(--fundo_div2);
+    background-color: var(--principal_op1);
+    padding: .5rem;
+    border-radius: 10px;
+    
+}
+
+p{
+    color: var(--textos_op2);
+    line-height: 1.5;
+}
+
+.sobre{
+    padding: 5rem ;
+}
+
+
+#sobre h2, #projectos h2, #habilidades h2, #contacto h2{
+    color: var(--principal_op2);
+    margin-bottom: 1.5rem;
+}
+
+#projectos{
+    padding: 5rem 2rem;
+    background-color: var(--fundo_div1);
+}
+
+#cards_projectos{
+    display: flex;
+    justify-content: space-around;
+    
+    gap: 1rem;
+}
+
+#cards_projectos #card{
+    min-height: fit-content;
+    width: 100%;
+    flex: 1 1 220;
+    padding: .5rem;
+    background-color: #F5F5F5;
+}
+
+#habilidades{
+    padding: 5rem 2rem;
+}
+
+#cards_skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#cards_skills span{
+    background-color: #a8d0ff;
+    padding: .5rem;
+    border-radius: 10px;
+    color: #063786;
+}
+
+#contacto{
+    padding: 5rem 2rem;
+    background-color: var(--fundo_div1);
+}
+
+#contacto div.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/*RODAPE*/
+footer{
+    background-color: var(--principal_op1);
+    padding: .5rem;
+    color: var(--fundo_div2);   
+}
+
+footer p {
+    text-align: center;
+    font-weight: 400;
+    font-size: .9rem;
+}
